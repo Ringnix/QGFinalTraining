@@ -41,6 +41,7 @@ public class HistoryFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 refreshHistory();
+                Toast.makeText(getActivity(), "刷新成功", Toast.LENGTH_SHORT).show();
             }
         });
         HistoryDbHelper ebHelper = HistoryDbHelper.getInstance(getActivity());
