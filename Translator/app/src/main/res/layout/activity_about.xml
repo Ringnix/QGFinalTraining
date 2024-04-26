@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff0f5"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4169e1"
+        app:navigationIcon="@drawable/baseline_arrow_back_24two"
+        app:title="关于APP"
+        app:titleTextColor="@color/white"/>
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/img"
+        android:layout_marginTop="50sp"
+
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:lineSpacingExtra="3sp"
+
+        android:text="想要跨越语言的障碍，畅游全球吗？全新一代翻译APP——翻译官2.0，助您轻松实现！这款由顶级翻译师倾力打造的应用，以其卓越的翻译质量和便捷的操作体验，成为您的私人翻译专家。翻译官2.0拥有丰富的语言库，支持数十种热门语言之间的实时翻译，让您在全球范围内畅行无阻。无论是出国旅游、商务洽谈，还是学习交流，翻译官2.0都能为您提供准确、地道的翻译服务。创新的人机交互设计，让翻译官2.0的操作更加简便。此外，翻译官2.0还支持离线翻译功能，让您在没有网络的情况下也能轻松使用。
+赶快下载翻译官2.0，让世界不再有语言障碍，畅享沟通的快乐！现在注册，还能免费获得专业版会员体验，让您尽享高级翻译服务。快来加入翻译官2.0，开启您的全球沟通之旅吧！"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by 钟承礼"
+        android:layout_margin="12sp"
+        android:layout_gravity="right"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

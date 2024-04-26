@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff0f5"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="500sp"
+    android:layout_height="50sp"
+    android:layout_marginTop="30dp"
+    app:title="返回登录"
+    app:navigationIcon='@drawable/baseline_arrow_back_24'/>
+    <ImageView
+        android:layout_width="445sp"
+        android:layout_height="300sp"
+        android:src="@drawable/aa"
+        android:scaleType="fitStart"
+        tools:ignore="ContentDescription" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="66sp"
+        android:src="@drawable/rg"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="2sp"
+        android:textColor="#333"
+        android:text="注册"
+        tools:ignore="HardcodedText"
+        android:textStyle="bold"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26sp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:background="@drawable/login_et_bg">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:src="@drawable/id"
+                tools:ignore="ContentDescription" />
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:hint="请输入用户名"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields,VisualLintTextFieldSize" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/login_et_bg">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:src="@drawable/code"
+                tools:ignore="ContentDescription" />
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:hint="请输入密码"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/et_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="#7146ff"
+            android:text="注册"
+            tools:ignore="HardcodedText,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
